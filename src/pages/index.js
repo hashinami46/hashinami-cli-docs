@@ -23,7 +23,6 @@ const Card = ({ icon, title, description }) => {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const theme = document.documentElement.getAttribute("data-theme");
   return (
     <Layout
       title={siteConfig.title}

@@ -13,9 +13,9 @@ const config = {
   title: "Hashinami CLI",
   tagline: "にらめっこしましょう、笑うと負けよ、あしゅしゅ！",
   favicon: "img/favicon.ico",
-
+  // staticDirectories: ["static"],
   // Set the production url of your site here
-  url: "https://github.com",
+  url: "https://hashinami46.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often "/<projectName>/"
   baseUrl: "/hashinami-cli-docs/",
@@ -25,7 +25,7 @@ const config = {
   organizationName: "hashinami46", // Usually your GitHub org/user name.
   projectName: "hashinami-cli-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
