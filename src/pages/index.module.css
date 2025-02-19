@@ -1,0 +1,82 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainer {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 200px;
+	background-color: #eee;
+}
+
+[data-theme='dark'] .cardContainer {
+	background-color: #333;
+}
+
+.cardIcon {
+  text-align: left;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ddd;
+}
+
+[data-theme='dark'] .cardIcon {
+  background-color: #444;
+}
+
+.cardIcon img {
+  width: 30px; /* Ukuran ikon */
+}
+
+.cardContent h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+[data-theme='dark'] .cardContent h3 {
+  color: #fff;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: #555;
+}
+
+[data-theme='dark'] .cardContent p {
+  color: #aaa;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardContainer {
+    margin: 10px;
+  }
+}
