@@ -3,9 +3,9 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
+import MDXContent from "@theme/MDXContent";
 import styles from "./index.module.css";
 import LandingMarkdown from "./_markdown-landing-page.md"
-
 
 const Card = ({ icon, title, description }) => {
   return (
@@ -46,24 +46,26 @@ export default function Home() {
       <main style={{ textAlign: "center", marginBottom: "2em"}}>
         <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
           <Card 
-            icon="/img/icon-rocket.png" 
+            icon={require("@site/static/img/icon-rocket.png").default}
             title="Fast" 
             description="Zips along like a rocket, making everything you do faster and smoother." 
           />
           <Card 
-            icon="/img/icon-lightning.png" 
+            icon={require("@site/static/img/icon-lightning.png").default}
             title="Easy to use" 
             description="Super easy to import and use wherever you need them. No fuss, just straightforward integration." 
           />
           <Card 
-            icon="/img/icon-fire.png" 
+            icon={require("@site/static/img/icon-fire.png").default}
             title="Always updated" 
             description="I'm constantly adding new features to keep things fresh and exciting. Stay tuned, awesome updates are just around the corner!" 
           />
         </div>
         <div className="container" style={{textAlign: "left"}}>
           <hr />
-          <LandingMarkdown />
+          <MDXContent>
+            <LandingMarkdown />
+          </MDXContent>
           <hr />
         </div>
       </main>

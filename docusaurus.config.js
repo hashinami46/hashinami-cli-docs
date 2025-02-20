@@ -25,7 +25,7 @@ const config = {
   organizationName: "hashinami46", // Usually your GitHub org/user name.
   projectName: "hashinami-cli-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
-  onBrokenLinks: "warn",
+  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set

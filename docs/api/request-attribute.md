@@ -40,7 +40,7 @@ console.log(refresh_token, access_token);
   - `params.refresh_token`: `string|undefined`. Token to refresh access_token.
   - `params.access_token`: `string|undefined`. Token to access some api.
 - **Description**: Read, write, update token or cookies for talk apps.
-- **Return**: `Promise<(Object[]|void)>`
+- **Return**: `Promise<(Object<{ refresh_token: string, access_token: string }>|void)>`
 
 ### `customHeader({ access_token })`
 ```js
@@ -51,5 +51,5 @@ console.log(data);
 - **Parameters**:
   - `params.access_token`: `string|undefined`. Token to access some api.
 - **Description**: Generate http header to perform an app request.
-- **Return**: `Promise<Object[]>`
+- **Return**: `Promise<Object>`
 ***
